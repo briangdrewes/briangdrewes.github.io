@@ -43,8 +43,9 @@ a :visited {
 }
 
 .icon {
-  width: 130px !important;
-  height: 130px !important;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .ball {
