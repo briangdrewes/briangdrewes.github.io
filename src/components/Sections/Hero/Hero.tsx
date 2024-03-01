@@ -57,7 +57,7 @@ const Hero = () => {
                             fontWeight: '600'
                         }}>
                       
-                        The place where your business expands
+                        Finding insights and sharing stories with data.
                         </Typography>
                         <Typography
                             variant='h2'
@@ -72,7 +72,9 @@ const Hero = () => {
                             maxWidth: '570px',
                             fontWeight: '300'
                         }}>
-                           Hey there! Call me Vito Medlej. I enjoy creating kickass websites and web/mobile apps, ones that suit your desires and needs using latest technologies and cleanest design patterns. 
+                            
+                            Experienced stakeholder-facing professional with a passion for data-driven insights. Seeking a role that utilizes technology to drive growth within a company. Always learning and exploring new ways to enhance
+                            processes to drive business value.
                         </Typography>
 
                         <Box
@@ -83,7 +85,7 @@ const Hero = () => {
                             flexWrap: 'wrap',
                             alignItems: 'center'
                         }}>
-
+                            
                             <Button
                                 className="  b1 explore offset "
                                 sx={{
@@ -98,7 +100,7 @@ const Hero = () => {
                             })}>
                                 View Projects
                             </Button>
-                        <a href={`https://drive.google.com/drive/u/0/my-drive`} rel="noreferrer" target='_blank' >
+                        <a href={`https://drive.google.com/file/d/1MvX-hkTnUnDxjeGICRvpFf07OzOgIoP6/view?usp=drive_link`} rel="noreferrer" target='_blank' >
 
                             <Button
                                 className='b2'
@@ -166,7 +168,7 @@ const Hero = () => {
                                 sm: '2em 3em 0px #313131'
                             }
                         }}>
-
+                            
                             <Image
 
                             
@@ -178,7 +180,7 @@ const Hero = () => {
                                 zIndex: '2'
                             }}
                                 className='img1'
-                                src={`https://ucarecdn.com/150b60a1-4ef3-4ec8-8f1a-d90a7ea26c85/-/crop/1129x1256/0,194/-/preview/3000x3000/`}
+                                src={`https://res.cloudinary.com/dcosauyla/image/upload/v1709057547/linkedinpic_nn8gio.jpg`}
                                 alt="Personal Image"/>
                             <Box
                                 className='gradientBg'
@@ -221,9 +223,9 @@ const Hero = () => {
                                     fontSize: '.85em',
                                     padding: '1em'
                                 }}>
-{`"Many ideas grow better when transplanted into another mind than the one where they sprang up."
+{`"And one more thing."
 
-– Oliver Wendell Holmes`}
+–Steve Jobs `}
                                 </Typography>
 
                             </Box>

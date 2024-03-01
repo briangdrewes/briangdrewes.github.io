@@ -16,9 +16,9 @@ function Copyright() {
             
 
             <Typography variant='h1' fontSize='1em'>
-                {'Copyright © '}
-                <Link color="inherit" target='_blank'  rel="noreferrer" href="https://onbeirut.onrender.com">
-                    onbeirut.onrender.com
+                {''}
+                <Link color="inherit" target='_blank'  rel="noreferrer" href="https://www.linkedin.com/in/briangdrewes/">
+                    Brian Drewes
                 </Link>{' '} {new Date().getFullYear()}
                 {'.'}
             </Typography>
@@ -65,9 +65,8 @@ function Footer() {
 
                         <Box sx={styles}>
                             <Typography variant='h3' fontSize='1em'>
-                                Hi, my name is Vito Medlej and I have created the OnBeirut Agency which aims to solve various issues small lebanese
-                                businesses face. You are free to use the website as a template for yourself as long as you
-                                give credit.
+                                Hi, my name is Brian Drewes. I am looking for roles in data science and problem solving. The type of work that excites me is 
+                                data visualizations and machine learning models that deliver tangible business value. Real results. Click the links to the right!
                             </Typography>
                         </Box>
 
@@ -92,10 +91,10 @@ function Footer() {
                     <Grid item xs={12} sm={3} md={3}>
                         <Typography variant='h1' fontSize='1.4em' fontWeight='400'>Contact</Typography>
                         <Box className='link' sx={styles}>
-                            <a target='_blank' rel="noreferrer" href='https://github.com/VitoMedlej'>Github</a>
-                            <Typography variant='h1' fontSize='1em'>vito.medlej@gmail.com</Typography>
-                            <Typography variant='h1' fontSize='1em'>Lebanon/Beirut</Typography>
-                            <Typography variant='h1' fontSize='1em'>+961/81826445</Typography>
+                            <a target='_blank' rel="noreferrer" href='https://github.com/briangdrewes'>Github</a>
+                            <Typography variant='h1' fontSize='1em'>briangdrewes@gmail.com</Typography>
+                            <Typography variant='h1' fontSize='1em'>New York, US</Typography>
+                            <Typography variant='h1' fontSize='1em'>+1 (516) 404-9751</Typography>
                         </Box>
                     </Grid>
                 </Grid>

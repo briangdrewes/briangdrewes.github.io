@@ -4,9 +4,9 @@ import {useEffect} from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import MainTitleAnimation from '../../../gsap/MainTitleAnimation';
-import HandymanIcon from '@mui/icons-material/Handyman';
-import HttpIcon from '@mui/icons-material/Http';
-import DevicesIcon from '@mui/icons-material/Devices';
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import AddchartIcon from '@mui/icons-material/Addchart';
 
 export const centeredStyles = {
     alignItems: 'center',
@@ -21,19 +21,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const perksArray = [{
-    title:'Continuous support',
-    Icon:HandymanIcon,
-    text:'I will advance your web-based software to keep it efficient, competitive on the market. Using a well-established DevOps processes, It helps me roll out urgent updates within few hours and release new, planned functional modules every other week.',
+    title:'Data Visualization & Wrangling',
+    Icon:AddchartIcon,
+    text:"Transforming raw data into compelling visual stories, I leverage advanced visualization techniques and wrangling skills to unveil insights that drive decision-making. My approach simplifies complex datasets, making them accessible and actionable for all stakeholders.",
 },
 {
-    title : 'Back-end development',
-    text : 'I accurately implement the business logic of your web app on the back end. I always rely on proven frameworks to ensure fast and quality coding. And I build well structured APIs to integrate your web app with corporate or third-party systems and services',
-    Icon :  HttpIcon,
+    title : 'Communication & Consumer Engagement',
+    text : "Expert in crafting narratives that resonate, I excel in engaging consumers and stakeholders with clear, persuasive communication strategies. By understanding audience needs, I create meaningful connections that enhance brand loyalty and drive engagement.",
+    Icon :  RecordVoiceOverIcon,
 }   ,
 {
-    title : 'Frontend design/dev',
-    Icon : DevicesIcon,
-    text : 'As a web expert I tend to closely analyze the user audience to understand their needs and reflect these findings in UI design. Having agreed on the look and feel of a web app with project stakeholders, I push to bring it to life with smart front-end technologies.'
+    title : 'Machine Learning & Generative AI',
+    Icon : PsychologyIcon,
+    text : "Pushing the boundaries of innovation, I apply machine learning and generative AI to solve real-world problems, from predictive analytics to creating new content. My work not only anticipates future trends but also sets new standards in automation and creativity."
 }
 ]
 const Perks = () => {
@@ -63,7 +63,7 @@ const Perks = () => {
                 }
             }}
                 fontWeight='600'>
-                You&lsquo;re Safe And in Good Hands
+                Unlocking Solutions with Purpose and Innovation
             </Typography>
             <Typography
                 variant='h2'
@@ -78,7 +78,9 @@ const Perks = () => {
                     sm: '1em'
                 }
             }}>
-                Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service.
+                Driven by a quest to uncover the 'why' behind each challenge, I blend cutting-edge technology with a deep understanding of human and 
+                data complexities to craft impactful solutions. My approach prioritizes understanding the root problems to innovate and streamline processes, 
+                ensuring every project not only solves immediate issues but also enhances interactions and operations for the long term.
             </Typography>
 
             <Box

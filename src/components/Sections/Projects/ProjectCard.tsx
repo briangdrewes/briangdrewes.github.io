@@ -146,7 +146,7 @@ const ProjectCard = ({
                                 border: '1px solid #0092ff'
                             }}>
                                 <Typography fontSize='12px'>
-                                    Live Site
+                                    See Full Post
                                 </Typography>
                             </Button>
                         </a>

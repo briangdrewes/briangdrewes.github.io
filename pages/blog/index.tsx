@@ -9,7 +9,7 @@ const Index = () => {
             opacity: 1,
             // background: '#000000eb',
         }}
-            title='Vito Medlej | Blog '>
+            title='Brian Drewes | Blog '>
             <main>
 
                 <Box
@@ -23,10 +23,10 @@ const Index = () => {
                   <Box sx={{alignItem:'center',flexDirection:'column',maxWidth:'md',textAlign:'center',display:'flex',justifyContent:'center',margin:'0 auto',height:'100%'}}>
 
                   <Typography component='h1' sx={{color:'black',fontSize:{xs:'1.5em',md:'2em',lg:'2.5em'},fontWeight:'bold',py:'.5em'}}>
-                          Best Articles From Experienced Devs To The World
+                        Articles from Data Science
                   </Typography>
                   <Typography component='h4' sx={{color:'gray',fontWeight:'300',maxWidth:'sm',margin:'0 auto',textAlign:'center'}}>
-                      The more you learn the more you earn. Regardless of if you are just starting out or already in the tech industry, there is an article just for you.  
+                      The more you learn the more you earn. Regardless of if you are just starting out or already in the data world, there is an article just for you.  
                   </Typography>
                   <Box sx={{margin:'0 auto',pt:1,display:'flex'}}>
                   <TextField placeholder='Email Address'/>

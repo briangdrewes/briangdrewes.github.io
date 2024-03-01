@@ -63,7 +63,7 @@ const Projects = ({projectsArray} : IProjects[] | any) => {
                             }
                         }}
                             fontWeight='600'>
-                            Successful Projects I&apos;m Proud Of
+                            Projects I have worked on
                         </Typography>
                         <Typography
                             className='title4 t25o0'
@@ -76,7 +76,7 @@ const Projects = ({projectsArray} : IProjects[] | any) => {
                                 sm: '1em'
                             }
                         }}>
-                            No better way to get experience than real-life projects
+                            No better way to get understand your data other than getting hands-on
                         </Typography>
 
                     </Grid>

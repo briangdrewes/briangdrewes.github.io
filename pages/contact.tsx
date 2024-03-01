@@ -62,15 +62,15 @@ const Contact = () => {
             return;
         }
 
-        const req = await emailjs.sendForm(`service_fvka279`, 'template_veigfx8', form.current, 'lbTdA9-5crCdl733u')
+        const req = await emailjs.sendForm(`service_ammuf9p`, 'template_jmqyx74', form.current, 'yVJ2Ttp02Jqov5yXF')
         const res = await req
         setStatus(res ? res.status : 400)
     };
 
     return (
         <Layout
-            title='Vito Medlej contact page'
-            desc='If you have questions or need help you can contact me at vito.medlej@gmail.com | Or Send a Message through the form.'>
+            title='Brian Drewes contact page'
+            desc='If you have questions you can contact me at briangdrewes@gmail.com | Or Send a Message through the form.'>
 
             <Box sx={{
                 overflowX: 'hidden'
@@ -140,7 +140,7 @@ const Contact = () => {
                             pt: '1em',
                             fontWeight: '600'
                         }}>
-                            Let&apos;s achieve the impossible together
+                            Unlock hidden potential with data using people
                         </Typography>
                         <Typography
                             variant='h2'
@@ -156,8 +156,7 @@ const Contact = () => {
                             maxWidth: '570px',
                             fontWeight: '300'
                         }}>
-                            If you need help or have some questions, I&apos;ll be there ready and happy to
-                            help.
+                            Feel free to leave me a note below! I check my email regularly and I am actively looking for job opportunities, feedback, and networking.
                         </Typography>
                     </Box>
                     <Box
@@ -198,7 +197,7 @@ const Contact = () => {
                                 gap: '1em'
                             }}>
                                 <Input name="user_name" label='Name'/>
-                                <Input name="user_phone" type='number' label='Phone'/>
+                                <Input name="user_phone" type='tel' label='Phone'/>
                             </Box>
                             {/* <Input name="user_email" type='email' label='Email' mt='1em'/> */}
 
@@ -218,7 +217,7 @@ const Contact = () => {
                                 label={'Email'}
                                 variant="outlined"/>
 
-                            <Input name="message" label='Subject' mt='1em' multi={true}/>
+                            <Input name="message" label='Your Message...' mt='1em' multi={true}/>
 
                             <Button
                                 type='submit'
@@ -250,18 +249,18 @@ const Contact = () => {
                         }}>
 
                             <ContactBox 
-                            href='mailto:vito.medlej@gmail.com'
+                            href='mailto:briangdrewes@gmail.com'
                             target='_blank'
-                            t1='Get in touch' t2='Email Address' t3='vito.medlej@gmail.com'/>
+                            t1='Get in touch' t2='Email Address' t3='briangdrewes@gmail.com'/>
                             <ContactBox 
-                            href={`https://www.google.com/maps/place/Lebanon/data=!4m2!3m1!1s0x151f17028422aaad:0xcc7d34096c00f970?sa=X&ved=2ahUKEwiK1JSG9or9AhXfUaQEHdUJC40Q8gF6BAgIEAI`}
+                            href={`https://www.google.com/maps/place/New+York,+NY/@40.6970193,-74.3093233,10z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu`}
                             target='_blank'
                             t1='Location'
-                             t2='Currently living in' t3='Lebanon/Beirut'/>
+                             t2='Currently living in' t3='New York, US'/>
                             <ContactBox 
                             target='_blank'
-                            href={'https://wa.me/96181826445'}
-                            t1='Contact Directly ' t2='Phone Number' t3='+961/ 81826445'/>
+                            href={"sms:+15164049751"}
+                            t1='Contact Directly ' t2='Phone Number' t3='+1 (516) 404-9751'/>
                         </Box>
                     </Box>
                     <SocialMedia/>

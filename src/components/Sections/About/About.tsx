@@ -61,7 +61,7 @@ const About = () => {
                             alt='Personal Image'
                             className='img1 '
                             layout='fill'
-                            src={`https://res.cloudinary.com/dwcu3wcol/image/upload/v1659776757/20211226_154523_-_Copy_hhy2kp.jpg`}/>
+                            src={`https://res.cloudinary.com/dcosauyla/image/upload/v1709057529/IMG_2780_acgwoe.jpg`}/>
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={7.5} lg={7}>
@@ -83,7 +83,7 @@ const About = () => {
                             }
                         }}
                             fontWeight='600'>
-                            About Me, Im Vito Medlej
+                            About Me, Brian
                         </Typography>
                         <Typography
                             variant='h2'
@@ -94,8 +94,12 @@ const About = () => {
                                 sm: '1em'
                             }
                         }}>
-                      A 20-year-old Lebanon-based software developer. I first started developing games using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 3 years now.
-
+                      Hi, my name is Brian Drewes. Coming from a customer-facing role at an AI/ML software company,
+                               I am driven to understand data science challenges that organizations face.
+                               Leveraging my background in Economics, my quantitative skills and sales-honed communication,
+                               I fuse these proficiencies into analytics and machine learning.
+                               I firmly believe in the power of analytics to elucidate the 'why' behind data-driven decisions,
+                               pivotal in resolving organizational data complexities.
                         </Typography>
                     </Box>
                     <Typography
@@ -108,11 +112,11 @@ const About = () => {
                             },
                             pb:'.5em'
                         }}>
-                      Being self-taught made me appreciate education; thus, I&apos;m studying Management Information Systems simultaneously. Business and technology are both my passions.
-
+                      I enjoy learning about new technologies with the applicability of impacting the business. If a stakeholder wants to increase the predictability of a machine learning model by 5%, why? Who does it impact and how?
                         </Typography>
                     <ReadMore>
-                    Aside from working hard, I tend to enjoy simple things like reading, petting cats, hitting the gym, and other things we humans do. If any of what I said seems interesting, then please do not hesitate to send me a message.
+                    Aside from work and learning, I tend to enjoy things such as martial arts, gaming, happy hours / brunch, and animals (dogs!). 
+                    If any of what I said seems interesting, then please feel free to reach out.
                     </ReadMore>
                 </Grid>
             </Grid>

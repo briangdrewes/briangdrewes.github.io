@@ -1,6 +1,5 @@
 import {Box} from '@mui/material'
-import type {NextPage}
-from 'next'
+import type {NextPage} from 'next'
 import Experience from '../src/components/Sections/TechTools/TechTools'
 import Hero from '../src/components/Sections/Hero/Hero'
 import Perks from '../src/components/Sections/Perks/Perks'
@@ -21,7 +20,7 @@ const Home : NextPage = ({projectsArray, iconsArray} : any) => {
 
     }, [])
     return (
-        <Layout desc={`Vito Medlej, A lebanese professional software engineer in Beirut, Can develop all kinds of websites and web/mobile applications according to your needs`} title='Vito Medlej Fullstack Developer Personal Portfolio Website'>
+        <Layout desc={`Brian Drewes, a data science professional in New York. From business intelligence analytics to machine learning insights, I can help turn data into business value.`} title='Brian Drewes - Analytcs & ML - Personal Portfolio Website'>
 
             <Box
                 sx={{
@@ -55,72 +54,131 @@ const Home : NextPage = ({projectsArray, iconsArray} : any) => {
 export default Home
 
 export async function getStaticProps() {
-    function removeEmpty(obj : any) {
-        return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null && v != false));
-    }
-    try {
-        // first, grab our Contentful keys from the .env file
-        const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
-        const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
+    // Hardcoded projects data
+    const projectsArray = [
+        {
+            title: 'Boosting Real Estate Decisions',
+            repoUrl: 'https://github.com/briangdrewes/machinelearning_Ames',
+            siteUrl: 'https://nycdatascience.com/blog/student-works/machine-learning/boosting-real-estate-decisions/',
+            description: 'Employing machine learning, this study enhances real estate purchasing strategies in Ames, Iowa. Through comprehensive data processing and model development, it offers actionable advice on property improvements and investments to maximize returns, demonstrating the utility of data-driven approaches in the real estate market.',
+            img: 'https://res.cloudinary.com/dcosauyla/image/upload/v1709300076/DALL_E_2024-02-29_10.50.27_-_Visualize_an_overhead_view_of_a_futuristic_suburban_environment_where_the_housing_market_is_deeply_integrated_with_artificial_intelligence._This_scene_bvlgta.webp', // You can use local images or URLs
+        },
+        // Add more projects as needed
+        {
+            title: 'Tackling NFL Defensive Data with R Shiny',
+            repoUrl: 'https://github.com/briangdrewes/nflapp',
+            siteUrl: 'https://nycdatascience.com/blog/student-works/r-shiny/tackling-nfl-defensive-data-with-r-shiny/',
+            description: 'Utilizing R and R Shiny, this application provides in-depth insights into NFL defensive players through player and team trackers, leaderboards, and live play animations. It serves various stakeholders by enabling the evaluation of player performance, identification of team dynamics, and strategic decision-making, with future prospects for AR/VR enhancements.',
+            img: 'https://res.cloudinary.com/dcosauyla/image/upload/v1709302038/footballpic_briangdrewes_b0tcya.jpg', // You can use local images or URLs
+        },
+        {
+            title: 'Be a YouTube mrBeast',
+            repoUrl: 'https://github.com/briangdrewes/youtuber-analysis',
+            siteUrl: 'https://nycdatascience.com/blog/student-works/be-a-youtube-mrbeast/',
+            description: `This analysis delves into the factors affecting YouTubers' success, focusing on how content category and geographic location impact subscriber counts and earnings. By analyzing the "Global YouTube Statistics 2023" dataset, it uncovers strategies for increasing visibility and earnings, highlighting the significance of choosing profitable content categories and capitalizing on recent trends.`,
+            img: 'https://res.cloudinary.com/dcosauyla/image/upload/v1709302034/youtube_briangdrewes_xgjld8.jpg', // You can use local images or URLs
+        },
+    ];
 
-        // then, send a request to Contentful (using the same URL from GraphiQL)
-        const res =    await fetch(`https://graphql.contentful.com/content/v1/spaces/${space}`, {
-            method: 'POST', // GraphQL *always* uses POST requests!
-            headers: {
-                'content-type': 'application/json',
-                authorization: `Bearer ${accessToken}`, // add our access token header
-            },
-            // send the query we wrote in GraphiQL as a string
-            body: JSON.stringify({
-                // all requests start with "query: ", so we'll stringify that for convenience
-                query: `
-                {
-                  projectCollection {
-                    items {
-                      title
-                      repoUrl
-                      siteUrl
-                      description
-                      img
-                    }
-                  }
-                  iconsCollection {
-                    items {
-                      filter
-                      svg
-                      title
-                      isBackend
-                    }
-                  }
-                }
-                
-                  `
-            })
-        },);
+    // Hardcoded icons data
+    const iconsArray = [
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/374016/python.svg', // Your SVG content here
+            title: 'Python',
+            isBackend: false,
+        },
+        // Add more icons as needed
+        {
+            filter: false,
+            svg: 'https://res.cloudinary.com/dcosauyla/image/upload/v1709243403/dataiku_npwcck.png', // Your SVG content here
+            title: 'dataiku',
+            isBackend: false,
+        },
+        {
+            filter: false,
+            svg: 'https://res.cloudinary.com/dcosauyla/image/upload/v1709243840/chatgpt_jl73bj.png', // Your SVG content here
+            title: 'ChatGPT',
+            isBackend: false,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/354200/postgresql.svg', // Your SVG content here
+            title: 'PostgreSQL',
+            isBackend: false,
+        },
+        
+        {
+            filter: false,
+            svg: 'https://res.cloudinary.com/dcosauyla/image/upload/v1709244008/r.ong_cmpb8k.png', // Your SVG content here
+            title: 'R',
+            isBackend: false,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/354428/tableau-icon.svg', // Your SVG content here
+            title: 'Tableau',
+            isBackend: false,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/373589/excel.svg', // Your SVG content here
+            title: 'Excel',
+            isBackend: false,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/349419/javascript.svg', // Your SVG content here
+            title: 'JavaScript',
+            isBackend: true,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/452210/git.svg', // Your SVG content here
+            title: 'Git',
+            isBackend: true,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/448266/aws.svg', // Your SVG content here
+            title: 'AWS',
+            isBackend: true,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/354306/salesforce.svg', // Your SVG content here
+            title: 'Salesforce',
+            isBackend: true,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/354259/react.svg', // Your SVG content here
+            title: 'React',
+            isBackend: true,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/331433/hubspot.svg', // Your SVG content here
+            title: 'HubSpot',
+            isBackend: true,
+        },
+        {
+            filter: false,
+            svg: 'https://www.svgrepo.com/show/448221/docker.svg', // Your SVG content here
+            title: 'Docker',
+            isBackend: true,
+        },
 
-        // grab the data from our response
-        const {data} = await res.json()
-        // const data :any = {}
-        if (!data || data?.length < 1) {
-            throw 'Error fetching data'
-        }
-        let iconsArray = []
-        for (let i = 0; i < data?.iconsCollection?.items.length; i++) {
-            let clearedIcon = removeEmpty(data?.iconsCollection.items[i])
-            iconsArray.push(clearedIcon)
-        }
-        return {
-            props: {
-                projectsArray: data?.projectCollection.items,
-                iconsArray
-            }
-        }
-    } catch (err) {
-        console.log('err: ', err);
-        return {
-            props: {
-                data: null
-            }
-        }
-    }
+
+
+        
+    ];
+
+    // No need for try-catch since we are not fetching data from an external source
+    return {
+        props: {
+            projectsArray,
+            iconsArray,
+        },
+    };
 }

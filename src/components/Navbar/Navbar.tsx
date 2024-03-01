@@ -61,7 +61,7 @@ const Navbar = ({toggleDrawer,navbarSx} : INavbar) => {
 
                 <Logo color={color} toggleDrawer={toggleDrawer} colorMode={colorMode}/>
                 <Button 
-                onClick={()=>router.push('/blog')}
+                onClick={()=>router.push('https://nycdatascience.com/blog/author/briandrewes/')}
                 sx={{mr:'1em',fontWeight:'500',':hover':{color:'#0092ff'},color:color}}>
                     {/* <Typography> */}
                     Blog

@@ -6,9 +6,12 @@ import {centeredStyles} from '../Perks/Perks';
 import ToolCard from './ToolCard';
 import gsap from 'gsap';
 
+
+
 const TechTools = ({iconsArray} : any) => {
     let FrontendTools = iconsArray && iconsArray.filter((icon : any) => !icon.isBackend)
     let OtherTools = iconsArray && iconsArray.filter((icon : any) => icon.isBackend)
+
 
     const colorMode = useContext(ColorModeContext)
     // turn off "filter" mode when the theme is set to dark mode
@@ -53,7 +56,7 @@ const TechTools = ({iconsArray} : any) => {
                     }
                 }}
                     fontWeight='600'>
-                    Tools Of The Present And Future 
+                    Utilizing technology to derive insights 
                 </Typography>
                 <Typography
                     variant='h2'
@@ -66,7 +69,7 @@ const TechTools = ({iconsArray} : any) => {
                         sm: '1em'
                     }
                 }}>
-                    Frontend technologies I prefer using
+                    Data technologies I prefer using
                 </Typography>
 
             </Grid>
@@ -110,7 +113,7 @@ const TechTools = ({iconsArray} : any) => {
                         sm: '1em'
                     }
                 }}>
-                    Other technologies
+                    Other technologies I have used
                 </Typography>
 
             </Grid>
