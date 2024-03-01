@@ -50,8 +50,8 @@ const ToolCard = ({title, svg, filter, className} : IToolCard) => {
                     className={`${filter
                     ? 'filter '
                     : ''} icon`}
-                    width={100}
-                    height={100}
+                    width={130}
+                    height={130}
                     src={`${svg}`}/>
             </Box>
             <Typography
